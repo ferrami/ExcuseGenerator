@@ -6,9 +6,9 @@ body {
 }
 
 #container {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .card {
@@ -16,6 +16,12 @@ body {
   border: 1px solid #bacdd8;
   padding: 20px;
   border-radius: 12px;
+}
+
+.card__details {
+  height: 400px;
+  /* Add space around the details */
+  padding: 30px 50px 30px 50px;
 }
 
 /* Style div element that have class name */
@@ -38,9 +44,18 @@ body {
 }
 
 /* Style button element */
-button {
+.btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+
+  text-align: center;
+  font-size: 16px;
+
   padding: 20px 25px;
   border-radius: 50px;
+  opacity: 1;
+  transition: 0.3s;
 
   font-weight: 600;
 
@@ -53,13 +68,7 @@ button {
   cursor: pointer;
 }
 
-.card__details {
-  height: 400px;
-  /* Add space around the details */
-  padding: 30px 50px 30px 50px;
-}
-
 /* Add style when button is focused or hovered */
-button:hover {
-  background-color: #1063a3;
+.btn:hover {
+  opacity: 0.6;
 }
